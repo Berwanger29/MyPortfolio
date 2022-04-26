@@ -8,26 +8,36 @@
     <title>Vinicius Berwanger</title>
 
     <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@200;300;400;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <img src="./assets/LogoSVG.svg" alt="logo">
-        <img src="./assets/menu.svg" alt="menu-image" width="30">
+    <nav id="nav-bar">
+        <div id="logo-container">
+            <img src="./assets/LogoSVG.svg" alt="logo" id="logo">
+        </div>
+        <div id="menu-container">
+            <img src="./assets/menu.svg" alt="menu-image" id="menu" width="30">
+        </div>
     </nav>
-    <section>
-        <h3>Ola, meu nome é</h3>
-        <h1>Vinicius Berwanger</h1>
-        <h2>Sou front end developer</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ex a velit efficitur blandit auctor
-            egestas nulla. Proin viverra sagittis eros, et varius ipsum finibus ut.
-        </p>
-
-        <button>Entre em contato</button>
+    <section id="greetings-section">
+        <div id="greetings-container">
+            <h3 id="greetings">Ola, meu nome é</h3>
+            <h1 id="greetings-name">Vinicius Berwanger</h1>
+            <h2 id="greetings-about">Sou front end developer</h2>
+            <p id="greetings-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ex a velit efficitur blandit auctor
+                egestas nulla. Proin viverra sagittis eros, et varius ipsum finibus ut.
+            </p>
+        </div>
+        <button id="greetings-btn">Entre em contato</button>
     </section>
 
-    <section>
+    <section id="about-section">
         <h3>01. Sobre mim</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ex a velit efficitur blandit auctor

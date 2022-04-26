@@ -14,4 +14,78 @@
 
 body{
     background-color: var(--background-color);
+    padding: 27px 30px;
+    /* font-family: 'Big Shoulders Text', cursive;
+    font-family: 'Fira Code', monospace; */
+}
+
+#logo-container{
+    width: 2.5rem;
+}
+#logo{
+    width: 100%;
+    height: 100%;
+}
+
+#menu-container{
+    width: 2.5rem;
+}
+#menu{
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#greetings-section{
+    height: 100vh;
+}
+
+#greetings-container{
+    margin-top: 8.5rem;
+    margin-bottom: 3rem;
+}
+
+#greetings{
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 17px;
+}
+
+#greetings-name{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+#greetings-about{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+#greetings-text{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    letter-spacing: 1.5px;
+}
+
+#greetings-btn{
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--primary-color);
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
 }
