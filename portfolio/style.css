@@ -44,11 +44,11 @@ body{
 }
 
 #greetings-section{
-    height: 100vh;
+    padding-top: 8.5rem;
+    height: 90vh;
 }
 
 #greetings-container{
-    margin-top: 8.5rem;
     margin-bottom: 3rem;
 }
 
@@ -79,7 +79,7 @@ body{
     letter-spacing: 1.5px;
 }
 
-#greetings-btn{
+.contact-btn{
     background-color: var(--background-color);
     border: 1px solid var(--primary-color);
     border-radius: 5px;
@@ -88,4 +88,151 @@ body{
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
+}
+
+#about-section{
+    margin-bottom: 20vh;
+}
+
+.topic-container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: var(--primary-color);
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 3.7rem;
+}
+.topic-container > p{
+    font-size: 1.3rem;
+}
+
+.about-text{
+    font-size: 1.2rem;
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+}
+
+#about-list{
+    list-style-image: url(./assets/dot.svg);
+    list-style-position: inside;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+}
+.about-list-item{
+    color: var(--text-secondary);
+}
+
+#image-container{
+    width: 100%;
+    margin: 3rem 0;
+    display: inline-block;
+    text-align: center;
+}
+
+#knowledge-section{
+    margin-bottom: 20vh;
+}
+
+.primary-card{
+   background-color: var(--background-card);
+   padding: 2.3rem 1.8rem;
+   margin-bottom: 0.6rem;
+   box-shadow: 0.3px  0.3px 5px  ;
+}
+.icon-container{
+    margin-top: 2.2rem;
+}
+.card-title{
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 1.2px;
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-bottom: 2.2rem;
+}
+.card-text{
+    font-family: 'Big Shoulders Text', cursive;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+}
+.card-tech-container{
+    display: flex;
+    flex-direction: row;
+}
+.card-tech-item{
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 2.9rem;
+    margin-right: 0.5rem;
+}
+
+#others-section{
+    margin-bottom: 20vh;
+}
+
+#title-others{
+    text-align: center;
+    font-family: 'Big Shoulders Text', cursive;
+    color: var(--text-primary);
+    letter-spacing: 1.5px;
+    font-size: 1.6rem;
+    margin-bottom:5rem ;
+}
+
+.secondary-card{
+    background-color: var(--background-card);
+    padding: 2.3rem 1.8rem;
+    margin-bottom: 0.6rem;
+    box-shadow: 0.3px  0.3px 5px  ;
+}
+
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding-bottom: 20px;
+}
+
+#shadow-card{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-title{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    letter-spacing: 1.3px;
+    margin-bottom: 2rem;
+}
+
+#contact-text{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    color: var(--text-secondary);
+    text-align: justify;
+    margin-bottom: 15vh;
+}
+
+#links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer p{
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
 }
