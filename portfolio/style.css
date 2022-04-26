@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #013C58;
+    --background-card: #00537A;
+    --primary-color: #F5A201;
+    --secondary-color: #F5A201;
+    --text-primary: #CCD6F6;
+    --text-secondary: #949BB2;
+}
+
+body{
+    background-color: var(--background-color);
+}
