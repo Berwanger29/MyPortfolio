@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Berwanger</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +19,23 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <div id="logo-container">
-            <img src="./assets/LogoSVG.svg" alt="logo" id="logo">
-        </div>
-        <div id="menu-container">
-            <img src="./assets/menu.svg" alt="menu-image" id="menu" width="30">
-        </div>
-    </nav>
+    <header id="header">
+        <a href="#" id="logo-container">
+            <img src="./assets/LogoSVG.svg" alt="logo" id="logo-img">
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span id="hamburguer"></span>
+            </button>
+
+            <ul id="menu">
+                <li><a href="#greetings-section">Home</a></li>
+                <li><a href="#about-section">Sobre</a></li>
+                <li><a href="#knowledge-section">Projetos</a></li>
+                <li><a href="#contact-section">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="greetings-section">
         <div id="greetings-container">
             <h3 id="greetings">Ola, meu nome é</h3>
@@ -34,7 +46,9 @@
                 egestas nulla. Proin viverra sagittis eros, et varius ipsum finibus ut.
             </p>
         </div>
-        <button class="contact-btn">Entre em contato</button>
+        <a href="mailto:viniciusberwangers@gmail.com">
+            <button class="contact-btn">Entre em contato</button>
+        </a>
     </section>
 
 
@@ -132,12 +146,20 @@
         <div id="shadow-card">
             <h3 id="contact-title">Entre em contato</h3>
             <p id="contact-text">Texto bacanudo pra convencer algúem a falar comigo</p>
-            <button class="contact-btn">Contato</button>
+            <a href="mailto:viniciusberwangers@gmail.com">
+                <button class="contact-btn">Contato</button>
+            </a>
         </div>
         <div id="links">
-            <img src="./assets/codepen.svg" alt="codepen icone">
-            <img src="./assets/github.svg" alt="github icone">
-            <img src="./assets/linkedin.svg" alt="linkedin icone">
+            <a href="https://codepen.io/berwanger29-the-bashful">
+                <img src="./assets/codepen.svg" alt="codepen icone">
+            </a>
+            <a href="https://github.com/Berwanger29">
+                <img src="./assets/github.svg" alt="github icone">
+            </a>
+            <a href="https://www.linkedin.com/in/vinicius-berwanger-b9a387207/">
+                <img src="./assets/linkedin.svg" alt="linkedin icone">
+            </a>
         </div>
 
     </section>
@@ -146,6 +168,10 @@
     <footer id="footer">
         <p>Feito por Vinicius Berwanger</p>
     </footer>
+
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>
