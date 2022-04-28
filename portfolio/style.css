@@ -47,8 +47,30 @@ body{
     width: 15vw;
     height: 100%;
     position: fixed;
-    background-color: red;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+#links-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-web{
+    cursor: pointer;
+    margin: 3vh 0;
+}
+
+.line-vertical{
+    padding-top: 100%;
+    height: 30%;
+    width: 1px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
 #right-container{
     width: 15vw;
     height: 100%;
