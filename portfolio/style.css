@@ -30,6 +30,12 @@ body{
     letter-spacing: 1.5px;
     cursor: pointer;
 }
+.contact-btn:hover{
+    transition: .6s ease;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
 .topic-container{
     display: flex;
     flex-direction: row;
@@ -129,7 +135,7 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
     height: 5rem;
-    padding: 1rem;
+    padding: 3rem;
     width: 100%;
     position: relative;
 
@@ -169,6 +175,11 @@ body{
     letter-spacing: 1.3px;
     cursor: pointer;
 }
+#cv-btn:hover{
+    transition: .6s ease;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
 
 #btn-mobile{
     display: none;
@@ -198,13 +209,14 @@ body{
     flex-direction: column;
 }
 
-
+/*====== GREETINGS ======*/
 #greetings-section{
     padding-top: 8.5rem;
     height: 90vh;
 }
 #greetings-container{
     margin-bottom: 3rem;
+    width: 100%;
 }
 #greetings{
     font-family: 'Fira Code', monospace;
@@ -235,7 +247,7 @@ body{
 
 
 
-
+/*====== ABOUT SECTION ======*/
 #about-section{
     margin-bottom: 20vh;
     display: flex;
@@ -246,14 +258,12 @@ body{
 #about-container{
     width: 50%;
 }
-
 .about-text{
     font-size: 1.2rem;
     font-family: 'Big Shoulders Text', cursive;
     letter-spacing: 1.5px;
     color: var(--text-secondary);
 }
-
 #about-list{
     list-style-image: url(./assets/dot.svg);
     list-style-position: inside;
@@ -263,11 +273,10 @@ body{
 .about-list-item{
     color: var(--text-secondary);
 }
-
 #image-container{
     width: 40%;
     margin: 3rem 0;
-    padding-top: 3.7rem;
+    padding-top: 5rem;
     display: inline-block;
     text-align: center;
 }
@@ -276,10 +285,13 @@ body{
     height: 100%;
 }
 
-#kwnowlegde-section{
+
+/*====== EXPERIENCE SECTION ======*/
+#experience-section{
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 20vh;
 }
 #img-01{
     width: 100%;
@@ -288,7 +300,6 @@ body{
 
 .card-bg-img{
     width: 50%;
-    height: 60%;
 }
 
 
@@ -297,11 +308,9 @@ body{
     background-color: var(--background-card);
     padding: 2.3rem 1.8rem;
     margin-bottom: 0.6rem;
-    box-shadow: 0.3px  0.3px 5px  ;
-
-    position: relative;
-    left: 45%;
-    bottom: 50%;
+    box-shadow: 0.3px  0.3px 5px;
+    margin-left: -50px;
+    margin-top: 50px;
  }
  .icon-container{
      margin-top: 2.2rem;
@@ -331,8 +340,13 @@ body{
      margin-right: 0.5rem;
  }
 
+/*====== OTHERS SECTION ======*/
 
-
+#others-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2vw
+}
 #title-others{
     font-family: 'Big Shoulders Text', cursive;
     font-size: 2rem;
@@ -340,18 +354,11 @@ body{
     text-align: center;
     margin-bottom: 5rem;
 }
-
-
- .secondary-card{
+.secondary-card{
     background-color: var(--background-card);
     padding: 2.3rem 1.8rem;
     margin-bottom: 0.6rem;
     box-shadow: 0.3px  0.3px 5px  ;
-}
-#others-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:2vw
 }
 
 #contact-section{
@@ -598,4 +605,83 @@ body{
     }
    
    
+}
+
+@media screen and (min-width:501px ) and (max-width: 759px){
+    #left-container{
+        display: none;
+    }
+    #right-container{
+        display: none;
+    }
+
+    #main{
+        display: flex;
+        justify-content: center;
+    }
+
+    #content-container{
+        padding: 0 5vw;
+        width: 80%;
+    }
+
+    #greetings-section{
+        width: 100%;
+    }
+
+    #about-section{
+        margin-bottom: 20vh;
+        display: block;
+    }
+    #about-container{
+        width: 100%;
+    }
+    #image-container{
+        width: 100%;
+    }
+    
+
+    #links{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    /*====== EXPERIENCE SECTION ======*/
+    #experience-section{
+        margin-bottom: 20vh;
+    }
+    .card-bg-img{
+        display: none;
+    }
+    .primary-card{
+        position: static;
+        width: 100%;
+        background-color: var(--background-card);
+        padding: 2.3rem 1.8rem;
+        margin-bottom: 0.6rem;
+        box-shadow: 0.3px  0.3px 5px  ;
+    }
+
+    /*====== OTHERS SECTION ======*/
+    #others-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media screen and (min-width:760px ) and (max-width: 970px){
+    #left-container{
+        display: none;
+    }
+    #right-container{
+        display: none;
+    }
+    #content-container{
+        padding: 0 5vw;
+    }
 }
