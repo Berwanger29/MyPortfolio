@@ -7,7 +7,7 @@
     --background-color: #013C58;
     --background-card: #00537A;
     --primary-color: #F5A201;
-    --secondary-color: #F5A201;
+    --secondary-color: #FFBA42;
     --text-primary: #CCD6F6;
     --text-secondary: #949BB2;
 }
@@ -52,31 +52,73 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15vh;
 }
 #links-container{
     display: flex;
     flex-direction: column;
 }
-
 .link-web{
     cursor: pointer;
     margin: 3vh 0;
+    filter: grayscale(85%) invert(50%)
+}
+.link-web:hover{
+    transition: .6s ease;
+    filter: grayscale(0%);
 }
 
-.line-vertical{
+
+#line-vertical-left{
     padding-top: 100%;
     height: 30%;
     width: 1px;
     border: 1px solid var(--primary-color);
+    border-radius: 2px;
     background-color: var(--primary-color);
 }
-
 #right-container{
     width: 15vw;
     height: 100%;
     position: fixed;
     right: 0;
-    background-color: red;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45vh;
+}
+#line-vertical-right{
+    position: absolute;
+    right: 7.5vw;
+    top: 70vh;
+
+    height: 20vh;
+    width: 1px;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    background-color: var(--primary-color);
+}
+#email-container{
+    display: flex;
+    flex-direction: row;
+}
+#email-link{
+    transform: rotate(90deg);
+
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+}
+#email-link:hover{
+    transition: .6s ease;
+    color: var(--primary-color);
+}
+#email-link:visited{
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
 /*====== HEADER ======*/
@@ -103,15 +145,17 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-family: 'Fira Code', monospace;
-    font-size: 07.rem;
+    font-size: .7rem;
+    color: var(--text-secondary);
 }
 #menu a:hover{
+    transition: .5s ease;
     color: var(--primary-color);
 }
+
 #menu a:visited{
     text-decoration: none;
-    color: var(--text-primary);
-    
+    color: var(--text-secondary);
 }
 #btn-mobile{
     display: none;
@@ -276,13 +320,13 @@ body{
 
 
 
- #title-others{
+#title-others{
     font-family: 'Big Shoulders Text', cursive;
     font-size: 2rem;
     color: var(--text-primary);
     text-align: center;
     margin-bottom: 5rem;
- }
+}
 
 
  .secondary-card{
@@ -290,8 +334,7 @@ body{
     padding: 2.3rem 1.8rem;
     margin-bottom: 0.6rem;
     box-shadow: 0.3px  0.3px 5px  ;
- }
-
+}
 #others-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
