@@ -532,20 +532,22 @@ body{
     
 
     
-    #knowledge-section{
-        margin-bottom: 20vh; 
+    #experience-section{
+        margin-bottom: 20vh;
+        width: 100%;
+
+        background-color: rebeccapurple;
     }
     .card-bg-img{
         display: none;
-        width: 100%;
     }
     .primary-card{
        background-color: var(--background-card);
+       width: 100%;
+       
+       box-shadow: 0.3px  0.3px 5px;
        padding: 2.3rem 1.8rem;
-       margin-bottom: 0.6rem;
-       box-shadow: 0.3px  0.3px 5px  ;
-       width: auto;
-       position: static; 
+       margin:0;
     }
     .icon-container{
         margin-top: 2.2rem;
