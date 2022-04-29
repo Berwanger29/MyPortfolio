@@ -659,12 +659,19 @@ body{
         display: none;
     }
     .primary-card{
-        position: static;
+        
         width: 100%;
         background-color: var(--background-card);
         padding: 2.3rem 1.8rem;
         margin-bottom: 0.6rem;
         box-shadow: 0.3px  0.3px 5px  ;
+
+        background-color: var(--background-card);
+        width: 100%;
+        
+        box-shadow: 0.3px  0.3px 5px;
+        padding: 2.3rem 1.8rem;
+        margin:0;
     }
 
     /*====== OTHERS SECTION ======*/
