@@ -659,7 +659,6 @@ body{
         display: none;
     }
     .primary-card{
-        
         width: 100%;
         background-color: var(--background-card);
         padding: 2.3rem 1.8rem;
