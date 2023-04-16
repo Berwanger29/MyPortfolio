@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vinicius Berwanger</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-    <link href="./style.css" type="text/css" rel="stylesheet">
-    <link href="./reset.css" type="text/css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;500&family=Fira+Code:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+
+    <title>Vinicius Berwanger</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    <link href="./reset.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,6 @@
         <a href="#" class="header_logo">
             <img src="./assets/LogoSVG.svg" alt="Logomarca Vinicius Berwanger" class="header_logo_img">
         </a>
-
     </header>
     <!-- <main id="main">
         <div id="left-container">
@@ -196,16 +195,14 @@
             </div>
         </div>
     </main> -->
-
-    <aside class="left_container">
-    </aside>
-
-    <main class="presentation">
-        <div class="presentation_content">
-            <p class="presentation_yellow">Olá meu nome é</p>
+    <main class="main">
+        <div class="left-container">
+        </div>
+        <section class="presentation">
+            <p class="presentation_yellow">Olá, meu nome é</p>
             <h1 class="presentation_title">Vinicius Berwanger</h1>
             <h2 class="presentation_subtitle">Sou desenvolvedor front-end</h2>
-            <p class="presentation_text">Minha especialidade é contruir (ocasionalmente também faço o
+            <p class="presentation_text">Minha especialidade é construir (ocasionalmente também faço o
                 design
                 no Figma) aplicações mobile multiplaformas com Expo e estou sempre em buscas de novos desafios que
                 acrescentem na minha carreira.
@@ -213,11 +210,137 @@
             <button class="presentation_button">
                 <p>Entre em contato</p>
             </button>
+        </section>
+
+        <section class="about">
+            <div class="about_container_title">
+                <p class="about_title_number">01.</p>
+                <h2 class="about_title">Sobre mim</h2>
+                <span class="line"></span>
+            </div>
+            <img src="assets/PersonalImage.jpg" alt="Foto de Vinicius Berwanger" class="personal_image" />
+            <p class="about_text">Olá ! Meu nome é Vinicius Berwanger e eu gosto de criar aplicações úteis e
+                interessantes que ajudem na vida das pessoas. Meu interesse pela área de TI começou em 2018 quando
+                conheci e procurei entender sobre HTML. Nos dias atuais estou me graduando em engenharia de software e
+                criando aplicações mobile com React Native.</p>
+            <ul class="about_list">
+                <li class="about_list_item">
+                    <img src="assets/icons/javaScript.svg" alt="javaScript logomarca">
+                    <p>JavaScript</p>
+                </li>
+                <li class="about_list_item">
+                    <img src="assets/icons/reactNative.svg" alt="">
+                    <p>React Native</p>
+                </li>
+                <li class="about_list_item">
+                    <img src="assets/icons/react.svg" alt="">
+                    <p>React</p>
+                </li>
+                <li class="about_list_item">
+                    <img src="assets/icons/sass.svg" alt="">
+                    <p>SASS</p>
+                </li>
+                <li class="about_list_item">
+                    <img src="assets/icons/css.svg" alt="">
+                    <p>CSS</p>
+                </li>
+                <li class="about_list_item">
+                    <img src="assets/icons/html.svg" alt="">
+                    <p>HTML</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="featured">
+            <div class="about_container_title">
+                <p class="about_title_number">02.</p>
+                <h2 class="about_title">Projetos de destaque</h2>
+                <span class="line"></span>
+            </div>
+
+            <div class="featured_primary">
+                <div class="primary_card">
+                    <h3 class="primary_card_title">Deco no boteco</h3>
+                    <p class="primary_card_text">Criação de um aplicativo mobile que se trata de um contador de pontos
+                        para dominó simples e elegante. Feito paraser usado com amigos e ter mais transparência na
+                        contagem de pontos</p>
+                    <ul class="card_list">
+                        <li class="primary_card_item">HTML</li>
+                        <li class="primary_card_item">CSS</li>
+                        <li class="primary_card_item">JavaScript</li>
+                    </ul>
+
+                    <div class="container_links">
+                        <ul class="links_list">
+                            <li class="links_item">
+                                <img src="assets/github.svg" alt="Gihub ícone linlk" class="links_item_icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="primary_card">
+                    <h3 class="primary_card_title">Deco no boteco</h3>
+                    <p class="primary_card_text">Criação de um aplicativo mobile que se trata de um contador de pontos
+                        para dominó simples e elegante. Feito paraser usado com amigos e ter mais transparência na
+                        contagem de pontos</p>
+                    <ul class="card_list">
+                        <li class="primary_card_item">HTML</li>
+                        <li class="primary_card_item">CSS</li>
+                        <li class="primary_card_item">JavaScript</li>
+                    </ul>
+
+                    <div class="container_links">
+                        <ul class="links_list">
+                            <li class="links_item">
+                                <img src="assets/github.svg" alt="Gihub ícone linlk" class="links_item_icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured_secondary">
+                <h2 class="secondary_title">Outros projetos</h2>
+                <div class="secondary_container">
+                    <div class="secondary_card">
+                        <h3 class="secondary_card_title">Consultas Github App</h3>
+                        <p class="secondary_card_text">Criação de uma aplicação web para consultar o perfil de usuários
+                            do Github, podendo ver repositórios, seguidores e outros dados.</p>
+                        <ul class="card_list">
+                            <li class="primary_card_item">Tech 1</li>
+                            <li class="primary_card_item">Tech 2</li>
+                            <li class="primary_card_item">Tech 3</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="secondary_card">
+                        <h3 class="secondary_card_title">Consultas Github App</h3>
+                        <p class="secondary_card_text">Criação de uma aplicação web para consultar o perfil de usuários
+                            do Github, podendo ver repositórios, seguidores e outros dados.</p>
+                        <ul class="card_list">
+                            <li class="primary_card_item">Tech 1</li>
+                            <li class="primary_card_item">Tech 2</li>
+                            <li class="primary_card_item">Tech 3</li>
+                        </ul>
+                    </div>
+                    <div class="secondary_card">
+                        <h3 class="secondary_card_title">Consultas Github App</h3>
+                        <p class="secondary_card_text">Criação de uma aplicação web para consultar o perfil de usuários
+                            do Github, podendo ver repositórios, seguidores e outros dados.</p>
+                        <ul class="card_list">
+                            <li class="primary_card_item">Tech 1</li>
+                            <li class="primary_card_item">Tech 2</li>
+                            <li class="primary_card_item">Tech 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="left-container">
         </div>
     </main>
-
-    <aside class="right_container">
-    </aside>
 </body>
 
 </html>

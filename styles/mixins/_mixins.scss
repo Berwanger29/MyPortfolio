@@ -1,0 +1,36 @@
+@import '../abstract/var';
+
+
+
+@mixin title-section() {
+    display: flex;
+    color: $primary-color;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .about_title_number {
+        font-size: $h-text * 1.375;
+        padding-bottom: 2px;
+    }
+
+    .about_title {
+        font-size: $h-subtitle;
+    }
+
+    .line {
+        height: 1.5px;
+        display: flex;
+        flex: 1;
+        margin: 0 0 10px 5px;
+        background-color: $primary-color;
+    }
+}
+
+
+@mixin card-list-items() {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}

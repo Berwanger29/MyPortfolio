@@ -1,0 +1,16 @@
+@import './var';
+
+html,
+body {
+    // font-family: $font-primary;
+    font-size: $h-text;
+    background-color: $background-color;
+    color: $text-secondary-color;
+    letter-spacing: 1px;
+    //padding: 30px; //doesn't work
+}
+
+* {
+    font-family: $font-primary;
+    box-sizing: border-box;
+}

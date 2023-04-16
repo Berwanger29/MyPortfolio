@@ -1,0 +1,40 @@
+@import '../abstract/var';
+
+.presentation {
+    height: 90vh;
+    padding: 40px 30px;
+
+    .presentation_yellow {
+        color: $primary-color;
+        font-family: $font-secondary;
+        margin-bottom: 20px;
+    }
+
+    .presentation_title {
+        font-size: $h-title;
+        margin-bottom: 10px;
+    }
+
+    .presentation_subtitle {
+        font-size: $h-subtitle;
+        margin-bottom: 17px;
+    }
+
+    .presentation_text {
+        line-height: 1.2rem;
+    }
+
+    .presentation_button {
+        background-color: transparent;
+        padding: 15px 25px;
+        border: 1px solid $primary-color;
+        border-radius: 6px;
+        margin-top: 40%;
+
+        p {
+            font-size: $h-text * 1.2;
+            color: $primary-color;
+            letter-spacing: 1px;
+        }
+    }
+}

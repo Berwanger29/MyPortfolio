@@ -1,0 +1,39 @@
+@import '../abstract/var';
+@import '../mixins/mixins';
+
+.about {
+    height: 100vh;
+    padding: 0 30px;
+
+    .about_container_title {
+       @include title-section()
+    }
+
+    .personal_image{
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .about_text {
+        margin-bottom: 20px;
+    }
+
+    .about_list {
+        .about_list_item {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+                margin-right: 20px;
+            }
+
+            p {
+                font-size: $h-text * 1.5;
+            }
+        }
+    }
+
+}
