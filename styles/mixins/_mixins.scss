@@ -34,3 +34,13 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
+@mixin main-button {
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid $primary-color;
+    border-radius: 6px;
+    font-size: $h-text * 1.2;
+    color: $primary-color;
+    letter-spacing: 1px;
+}

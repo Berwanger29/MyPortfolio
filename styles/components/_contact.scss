@@ -1,0 +1,44 @@
+@import '../abstract/var';
+@import '../mixins/mixins';
+
+.contact {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 30px 0 30px;
+
+    .contact_container_title {
+        display: flex;
+        color: $primary-color;
+        align-items: end;
+        margin-bottom: 40px;
+
+        .contact_title_number {
+            font-size: $h-text * 1.375;
+            padding-bottom: 2px;
+        }
+
+        .contact_title {
+            font-size: $h-subtitle;
+        }
+    }
+
+    .contact_subtitle {
+        font-size: $h-subtitle;
+        color: $text-primary-color;
+        margin-bottom: 60px;
+    }
+
+    .contact_text {
+        margin-bottom: 100px;
+    }
+
+
+    .main_button {
+        @include main-button()
+    }
+
+
+
+}
