@@ -57,12 +57,41 @@
                     margin-bottom: 20px;
                 }
 
-                .card_list{
+                .card_list {
                     @include card-list-items()
                 }
             }
         }
-
-
     }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .featured {
+        .featured_primary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+
+            .primary_card {
+                width: 48%;
+            }
+        }
+
+        .featured_secondary {
+            .secondary_container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 10px;
+    
+                .secondary_card {
+                    width: 49%;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+
 }

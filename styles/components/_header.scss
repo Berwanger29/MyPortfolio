@@ -1,6 +1,12 @@
+@import '../mixins/mixins';
+@import '../abstract/var';
+
 .header {
     padding: 30px;
     height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     .header_logo {
         display: block;
@@ -11,4 +17,27 @@
             width: 100%;
         }
     }
+
+    .main_button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+    .header {
+
+
+        .main_button {
+            display: block;
+            @include main-button();
+            text-decoration: none;
+            font-family: $font-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
 }

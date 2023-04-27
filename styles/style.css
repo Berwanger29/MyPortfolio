@@ -14,6 +14,9 @@ body {
 .header {
   padding: 30px;
   height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header .header_logo {
   display: block;
@@ -23,7 +26,27 @@ body {
 .header .header_logo img {
   width: 100%;
 }
+.header .main_button {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .header .main_button {
+    display: block;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid #F5A201;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #F5A201;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: "Big Shoulders Text", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .presentation {
   height: 90vh;
   padding: 40px 30px;
@@ -79,11 +102,17 @@ body {
   margin: 0 0 10px 5px;
   background-color: #F5A201;
 }
-.about .personal_image {
-  width: 100%;
+.about .about_text_media {
+  display: flex;
+  flex-direction: column;
+}
+.about .about_text_media .about_right {
   max-width: 500px;
   margin-bottom: 20px;
+}
+.about .about_text_media .about_right .personal_image {
   border-radius: 10px;
+  width: 100%;
 }
 .about .about_text {
   margin-bottom: 20px;
@@ -100,6 +129,36 @@ body {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    margin-bottom: 100px;
+  }
+  .about .about_text_media {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .about .about_text_media .about_right {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  .about .about_list {
+    display: flex;
+    padding: 0 10px;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about .about_list .about_list_item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .about .about_list .about_list_item img {
+    width: 50px;
+    margin-right: 5px;
+  }
+}
 .featured {
   padding: 50px 30px 0 30px;
 }
@@ -173,6 +232,27 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .featured .featured_primary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .featured .featured_primary .primary_card {
+    width: 48%;
+  }
+  .featured .featured_secondary .secondary_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .featured .featured_secondary .secondary_container .secondary_card {
+    width: 49%;
+    flex-direction: column;
+  }
+}
 .contact {
   height: 90vh;
   display: flex;

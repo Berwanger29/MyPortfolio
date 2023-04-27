@@ -4,15 +4,24 @@
 .about {
     padding: 0 30px;
 
+
     .about_container_title {
         @include title-section()
     }
 
-    .personal_image {
-        width: 100%;
-        max-width: 500px;
-        margin-bottom: 20px;
-        border-radius: 10px;
+    .about_text_media {
+        display: flex;
+        flex-direction: column;
+
+        .about_right {
+            max-width: 500px;
+            margin-bottom: 20px;
+
+            .personal_image {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
     }
 
     .about_text {
@@ -34,5 +43,41 @@
             }
         }
     }
+}
 
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .about {
+        margin-bottom: 100px;
+
+        .about_text_media {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            .about_right {
+                max-width: 500px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .about_list {
+            display: flex;
+            padding: 0 10px;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .about_list_item {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                img {
+                    width: 50px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }
