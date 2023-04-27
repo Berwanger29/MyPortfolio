@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #013C58;
   color: #949BB2;
   letter-spacing: 1px;
@@ -37,7 +37,7 @@ body {
     padding: 15px 25px;
     border: 1px solid #F5A201;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1.44rem;
     color: #F5A201;
     letter-spacing: 1px;
     text-decoration: none;
@@ -45,6 +45,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 42px;
   }
 }
 .presentation {
@@ -57,11 +62,12 @@ body {
   margin-bottom: 20px;
 }
 .presentation .presentation_title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 10px;
+  color: #CCD6F6;
 }
 .presentation .presentation_subtitle {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
   margin-bottom: 17px;
 }
 .presentation .presentation_text {
@@ -73,11 +79,19 @@ body {
   padding: 15px 25px;
   border: 1px solid #F5A201;
   border-radius: 6px;
-  font-size: 1.2rem;
+  font-size: 1.44rem;
   color: #F5A201;
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 1024px) {
+  .presentation {
+    padding: 100px 200px;
+  }
+  .presentation .presentation_text {
+    width: 60%;
+  }
+}
 .about {
   padding: 0 30px;
 }
@@ -89,11 +103,11 @@ body {
   margin-bottom: 40px;
 }
 .about .about_container_title .about_title_number {
-  font-size: 1.375rem;
+  font-size: 1.65rem;
   padding-bottom: 2px;
 }
 .about .about_container_title .about_title {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
 }
 .about .about_container_title .line {
   height: 1.5px;
@@ -114,6 +128,9 @@ body {
   border-radius: 10px;
   width: 100%;
 }
+.about .about_text_media .about_left {
+  font-size: 1.2rem;
+}
 .about .about_text {
   margin-bottom: 20px;
 }
@@ -126,7 +143,7 @@ body {
   margin-right: 20px;
 }
 .about .about_list .about_list_item p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,6 +176,17 @@ body {
     margin-right: 5px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 0 200px;
+  }
+  .about .about_text_media .about_left .about_text {
+    line-height: 1.5rem;
+  }
+  .about .about_list {
+    margin-top: 50px;
+  }
+}
 .featured {
   padding: 50px 30px 0 30px;
 }
@@ -170,11 +198,11 @@ body {
   margin-bottom: 40px;
 }
 .featured .about_container_title .about_title_number {
-  font-size: 1.375rem;
+  font-size: 1.65rem;
   padding-bottom: 2px;
 }
 .featured .about_container_title .about_title {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
 }
 .featured .about_container_title .line {
   height: 1.5px;
@@ -193,7 +221,7 @@ body {
   margin-bottom: 30px;
 }
 .featured .primary_card .primary_card_title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 .featured .primary_card .primary_card_text {
@@ -206,7 +234,7 @@ body {
   margin-bottom: 20px;
 }
 .featured .featured_secondary .secondary_title {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
   text-align: center;
   margin-bottom: 60px;
   color: #CCD6F6;
@@ -219,7 +247,7 @@ body {
 }
 .featured .featured_secondary .secondary_container .secondary_card .secondary_card_title {
   color: #CCD6F6;
-  font-size: 2.1rem;
+  font-size: 2.52rem;
   margin-bottom: 20px;
 }
 .featured .featured_secondary .secondary_container .secondary_card .secondary_card_text {
@@ -253,6 +281,11 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1024px) {
+  .featured {
+    padding: 0 200px;
+  }
+}
 .contact {
   height: 90vh;
   display: flex;
@@ -267,14 +300,14 @@ body {
   margin-bottom: 40px;
 }
 .contact .contact_container_title .contact_title_number {
-  font-size: 1.375rem;
+  font-size: 1.65rem;
   padding-bottom: 2px;
 }
 .contact .contact_container_title .contact_title {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
 }
 .contact .contact_subtitle {
-  font-size: 2.1rem;
+  font-size: 2.52rem;
   color: #CCD6F6;
   margin-bottom: 60px;
 }
@@ -286,7 +319,7 @@ body {
   padding: 15px 25px;
   border: 1px solid #F5A201;
   border-radius: 6px;
-  font-size: 1.2rem;
+  font-size: 1.44rem;
   color: #F5A201;
   letter-spacing: 1px;
 }
@@ -304,6 +337,9 @@ body {
 }
 .footer .footer_text {
   text-align: center;
+}
+.footer .footer_text .my_name {
+  color: #CCD6F6;
 }
 .footer .footer_text a {
   text-decoration: none;

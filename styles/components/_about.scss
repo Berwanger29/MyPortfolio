@@ -22,6 +22,10 @@
                 width: 100%;
             }
         }
+
+        .about_left{
+            font-size: $h-text;
+        }
     }
 
     .about_text {
@@ -73,11 +77,30 @@
                 display: flex;
                 align-items: center;
                 margin-right: 20px;
+
                 img {
                     width: 50px;
                     margin-right: 5px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .about {
+        padding: 0 200px;
+
+        .about_text_media {
+            .about_left {
+                .about_text {
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        .about_list{
+            margin-top: 50px;
         }
     }
 }

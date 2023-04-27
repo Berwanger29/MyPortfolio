@@ -92,6 +92,10 @@
             }
         }
     }
+}
 
-
+@media screen and (min-width: $breakpoint-desktop) {
+    .featured{
+        padding: 0 200px;
+    }
 }

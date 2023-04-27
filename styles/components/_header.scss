@@ -24,10 +24,7 @@
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
-
     .header {
-
-
         .main_button {
             display: block;
             @include main-button();
@@ -38,6 +35,10 @@
             justify-content: center;
         }
     }
+}
 
-
+@media screen and (min-width: $breakpoint-desktop) {
+    .header{
+        padding: 42px;
+    }
 }

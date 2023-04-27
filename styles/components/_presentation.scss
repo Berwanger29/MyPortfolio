@@ -14,6 +14,7 @@
     .presentation_title {
         font-size: $h-title;
         margin-bottom: 10px;
+        color: $text-primary-color;
     }
 
     .presentation_subtitle {
@@ -23,10 +24,20 @@
 
     .presentation_text {
         line-height: 1.2rem;
-        margin-bottom: 100px
+        margin-bottom: 100px;
     }
 
     .main_button {
         @include main-button();
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .presentation {
+        padding: 100px 200px;
+
+        .presentation_text {
+            width: 60%;
+        }
     }
 }

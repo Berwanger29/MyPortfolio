@@ -13,6 +13,10 @@
     .footer_text {
         text-align: center;
 
+        .my_name{
+            color: $text-primary-color;
+        }
+
         a{
             text-decoration: none;
             color: $text-primary-color;
