@@ -20,15 +20,14 @@
 
     .main_button {
         display: none;
+        text-decoration: none;
     }
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
     .header {
         .main_button {
-            display: block;
             @include main-button();
-            text-decoration: none;
             font-family: $font-primary;
             display: flex;
             align-items: center;
@@ -40,5 +39,15 @@
 @media screen and (min-width: $breakpoint-desktop) {
     .header{
         padding: 42px;
+        .main_button {
+            display: block;
+            @include main-button();
+            padding: 25px 30px;
+            text-decoration: none;
+            font-family: $font-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

@@ -8,6 +8,7 @@ body {
 
 * {
   font-family: "Big Shoulders Text", cursive;
+  font-size: 1.2rem;
   box-sizing: border-box;
 }
 
@@ -28,9 +29,34 @@ body {
 }
 .header .main_button {
   display: none;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
+  .header .main_button {
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid #F5A201;
+    border-radius: 6px;
+    font-size: 1.44rem;
+    color: #F5A201;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-family: "Big Shoulders Text", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .main_button:hover {
+    background-color: #F5A201;
+    color: #013C58;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 42px;
+  }
   .header .main_button {
     display: block;
     background-color: transparent;
@@ -40,16 +66,18 @@ body {
     font-size: 1.44rem;
     color: #F5A201;
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    padding: 25px 30px;
     text-decoration: none;
     font-family: "Big Shoulders Text", cursive;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-}
-@media screen and (min-width: 1024px) {
-  .header {
-    padding: 42px;
+  .header .main_button:hover {
+    background-color: #F5A201;
+    color: #013C58;
   }
 }
 .presentation {
@@ -73,6 +101,7 @@ body {
 .presentation .presentation_text {
   line-height: 1.2rem;
   margin-bottom: 100px;
+  text-align: justify;
 }
 .presentation .main_button {
   background-color: transparent;
@@ -82,6 +111,12 @@ body {
   font-size: 1.44rem;
   color: #F5A201;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.presentation .main_button:hover {
+  background-color: #F5A201;
+  color: #013C58;
 }
 
 @media screen and (min-width: 1024px) {
@@ -178,7 +213,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .about {
-    padding: 0 200px;
+    padding: 0 200px 100px 200px;
   }
   .about .about_text_media .about_left .about_text {
     line-height: 1.5rem;
@@ -214,24 +249,33 @@ body {
 .featured .featured_primary {
   margin-bottom: 80px;
 }
-.featured .primary_card {
-  width: 100%;
+.featured .featured_primary .primary_card {
   background-color: #00537A;
   padding: 40px 20px;
   margin-bottom: 30px;
+  transition: all 0.6s ease;
 }
-.featured .primary_card .primary_card_title {
+.featured .featured_primary .primary_card:hover {
+  box-shadow: 2px 4px 7.2px #F5A201;
+  color: #CCD6F6;
+}
+.featured .featured_primary .primary_card .primary_card_title {
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
-.featured .primary_card .primary_card_text {
+.featured .featured_primary .primary_card .primary_card_text {
   margin-bottom: 40px;
 }
-.featured .primary_card .card_list {
+.featured .featured_primary .primary_card .card_list {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+.featured .featured_primary .primary_card .container_links .links_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .featured .featured_secondary .secondary_title {
   font-size: 2.52rem;
@@ -291,7 +335,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 30px 0 30px;
 }
 .contact .contact_container_title {
   display: flex;
@@ -313,6 +356,8 @@ body {
 }
 .contact .contact_text {
   margin-bottom: 100px;
+  width: 60%;
+  text-align: justify;
 }
 .contact .main_button {
   background-color: transparent;
@@ -322,11 +367,21 @@ body {
   font-size: 1.44rem;
   color: #F5A201;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.contact .main_button:hover {
+  background-color: #F5A201;
+  color: #013C58;
 }
 
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 200px 30px 0 30px;
+  }
+}
 .footer {
-  height: 10vh;
-  padding: 0 30px 20px 30px;
+  padding: 0 30px 50px 30px;
 }
 .footer .footer_list_links {
   display: flex;

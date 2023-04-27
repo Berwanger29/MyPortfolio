@@ -9,28 +9,42 @@
 
     .featured_primary {
         margin-bottom: 80px;
+
+        .primary_card {
+            background-color: $background-card;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            transition: all .6s ease;
+
+            &:hover {
+                box-shadow: 2px 4px 7.2px $primary-color;
+                color: $text-primary-color;
+            }
+
+            .primary_card_title {
+                font-size: $h-text * 1.5;
+                margin-bottom: 20px;
+            }
+
+            .primary_card_text {
+                margin-bottom: 40px;
+            }
+
+            .card_list {
+                @include card-list-items()
+            }
+
+            .container_links {
+                .links_list {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
     }
 
-    .primary_card {
-        width: 100%;
-        background-color: $background-card;
-        padding: 40px 20px;
-        margin-bottom: 30px;
 
-        .primary_card_title {
-            font-size: $h-text * 1.5;
-            margin-bottom: 20px;
-        }
-
-
-        .primary_card_text {
-            margin-bottom: 40px;
-        }
-
-        .card_list {
-            @include card-list-items()
-        }
-    }
 
     .featured_secondary {
         .secondary_title {
@@ -84,7 +98,7 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 gap: 10px;
-    
+
                 .secondary_card {
                     width: 49%;
                     flex-direction: column;
@@ -95,7 +109,7 @@
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
-    .featured{
+    .featured {
         padding: 0 200px;
     }
 }
